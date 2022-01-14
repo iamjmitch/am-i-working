@@ -21,6 +21,7 @@ function cl(text) {
   console.log(text);
 }
 
+// Convert date return to 2 digits 1 -> 01
 function numberTo2Digits(number) {
   if (number.toString().length === 1) {
     return '0' + number;
@@ -39,6 +40,7 @@ function diff_weeks(check_date) {
   return Math.abs(Math.floor(diff));
 }
 
+// Function to toggle outcome text
 function handleOnOffDisplay(int) {
   answerContainer.classList.add('animate');
   if (int === 0) {
@@ -53,9 +55,11 @@ function handleOnOffDisplay(int) {
   }, 2000);
 }
 
+// Handle datepicker change
 function handleWeekChange() {
   let weeksDifference = diff_weeks(dateSelector.valueAsDate);
   handleOnOffDisplay(parseInt(weeksDifference) % 2);
 }
 
+// set initial display
 handleWeekChange();

@@ -31,6 +31,7 @@ div#centering {
   align-items: center;
 }
 
+/* Page Heading  */
 h2 {
   color: #e94560;
   font-family: 'Staatliches', cursive;
@@ -41,6 +42,7 @@ h2 {
   line-height: 25px;
 }
 
+/* Monday Friday Textv */
 .outcome {
   color: #e94560;
   font-family: 'Staatliches', cursive;
@@ -51,6 +53,7 @@ h2 {
   line-height: 25px;
 }
 
+/* Date Picker Container */
 .datepicker {
   display: flex;
   flex-direction: column;
@@ -62,6 +65,7 @@ h2 {
   position: relative;
 }
 
+/* Date Selector  */
 .datepicker #date {
   text-align: center;
   background: #1a1a2e;
@@ -70,16 +74,20 @@ h2 {
   width: 110px;
 }
 
+/* Remove Default Focus Effects */
 .datepicker #date:focus-visible {
   outline: none;
   border: none;
 }
+
+/* Alter Calendar Icon  */
 input[type='date']::-webkit-calendar-picker-indicator {
   filter: invert(1);
   margin: 0;
   padding: 0;
 }
 
+/* Date Picker Label  */
 label {
   position: absolute;
   background: #1a1a2e;
@@ -89,16 +97,19 @@ label {
   color: #e94560;
 }
 
+/* Outcome Container  */
 #answer {
   margin-top: 50px;
 }
 
+/* Outcome Container Animation Class */
 .animate {
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
+/* On Off Text Modify  */
 b {
   color: white;
   font-family: 'Staatliches', cursive;
